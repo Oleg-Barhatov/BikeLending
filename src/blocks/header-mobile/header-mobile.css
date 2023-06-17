@@ -1,0 +1,12 @@
+.header-mobile {
+  width: 22px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .header-mobile {
+display: flex;  }
+}
