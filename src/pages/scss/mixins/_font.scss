@@ -1,0 +1,7 @@
+@mixin font($ff, $fs, $fw, $lh, $cl ) {
+  font-family: $ff, 'Times New Roman', Times, serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $cl;
+}
