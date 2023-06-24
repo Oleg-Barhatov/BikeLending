@@ -1,3 +1,6 @@
+@use '../../pages/scss/mixins/mix';
+@use '../../pages/scss/variables' as *;
+
 .header {
   max-width: 1440px;
   padding: 28px 120px 28px 0;
@@ -7,11 +10,12 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     gap: 34px;
-    @include list;
-    @include font(inter, 14px, 500, 18px, $font-color);
+    @include mix.list;
+    @include mix.font(Inter, 14px, 500, 18px, $font-color);
   }
 
   &__link  {
     text-decoration: none;
+    color: $font-color;
   }
 }

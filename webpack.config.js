@@ -25,17 +25,26 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        use: ["file-loader"],
         type: 'asset/resource',
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(s[ac]ss)$/i,
         use: [MiniCssExtractPlugin.loader, {
             loader: 'css-loader',
             options: {
               importLoaders: 1
             }
           },
-          'postcss-loader', 
+          'postcss-loader',
+          {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                includePaths: ["src"]
+              }
+            }
+          }
         ]
       },
     ]

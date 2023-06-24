@@ -1,7 +1,7 @@
-@import url(../../vendor/normalize.css);
-@import url(../../vendor/fonts/fonts.css);
-@import "mixins/mix";
-@import "variables";
-@import "../../blocks/header/header";
+@use "../../vendor/normalize.css";
+@use "../../vendor/fonts/fonts.css";
+@use "variables";
+@use "../scss/mixins/mix";
+@use '../../blocks/header/header.scss';
 
 
